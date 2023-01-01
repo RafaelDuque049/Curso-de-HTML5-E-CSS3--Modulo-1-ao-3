@@ -1,0 +1,16 @@
+Utilizando imagens no HTML;
+
+Funcionalidades de cada tipo de arquivo de imagem:
+
+Pontos ruins / Pontos bons
+
+*=============================*
+
+Gif = Baixa qualidade. / Transparência e animações.
+
+PNG = Não contém animação. / Pode conter tranparência.
+
+Jpg = Não contém Transparência. / Alta compactação. 
+Obs: Mais indicado.
+
+*=============================*
