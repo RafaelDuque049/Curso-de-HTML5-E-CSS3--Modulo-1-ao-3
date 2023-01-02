@@ -3,7 +3,7 @@ IMAGENS DO ARQUIVO: imagens curso.
 
 Formatos de imagens + seus pesos em sites:
 
-    Imagem 1 - Paisagem full 5184px | tipo: jpg/jpeg | tamanho: 2.268kb = 2.2mb | Não recomendado
+    Imagem 1 - Paisagem full 5184px | tipo: jpg/jpeg | tamanho: 2.268kb = 2.2mb | Não recomendado, fora de questão pelo tamanho visual
 
     imagem 2 - Paisagem 1500px | tipo: jpg/jpeg | tamanho: 218kb = 0.2mb | Aceitável
 
