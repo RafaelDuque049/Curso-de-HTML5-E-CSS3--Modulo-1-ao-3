@@ -4,60 +4,77 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Outros tipos de formatações</title>
+    <title>Listas</title>
 </head>
 <body>
-    <h1>Outras formatações</h1>
-    <h2>Código-fonte</h2>
+    <h1>Trabalhando com listas</h1>
 
-    <p>O comando <code>document.getElementById('teste')</code> é escrito em linguagem JavaScript.</p>
+    <h2>Listas Ordenadas</h2>
+    <ol type="a" start="2"> <!-- OL = Lista Ordenada-->
+        <li>Acorda</li> <!-- Li = Item da Lisa-->
+        <li>Ligar para o João</li>
 
-    <p>Utilizando apenas a Tag <strong>"CODE"</strong></p>
-    <code>
-        num = int(input('Digite um número: '))
+        <li>Tomar Café <!-- pode ser usado sem fechar as tags-->
+        <li>Escovar os dentes
 
-        if (num % 2 == 0):
-            print(f'O número {num} é Par')
-        else:
-            print(f'O número {num} é Impar')
+        <li>Ir para a faculdade</li>
+        <li>Almoçar</li>
+        <li>Ir para o trabalho</li>
+        <li>Voltar para casa</li>
+        <li>Jantar</li>
+        <li>Dormir</li>
+    </ol>
 
-        print('Fim do programa')
-    </code>
+    <h2>Listas não ordenadas</h2>
+    <ul type="square"> <!--UL = Lista não ordenada--> <!-- Tipos: Circle, Square, disc(padrão)-->
+        <li>Pão</li>
+        <li>Leite</li>
+        <li>Tomate</li>
+        <li>Manteiga</li>
+        <li>Arroz</li>
+        <li>Feijão</li>
+    </ul>
 
-    <p>Código usando a Tag <strong>"PRE"</strong></p>
-    <pre>
-        <code>
-num = int(input('Digite um número: '))
+    <h2>Minhas linguagens favoritas</h2>
+    <ol>
+        <li>Antigas</li>
+        <ol>
+            <li>Python</li>
+        </ol>
+        <li>Novas</li>
+        <ol start="2">
+            <li>JavaScript</li>
+            <li>HTML5</li>
+            <li>CSS3</li>
+        </ol>
+    </ol>
 
-if (num % 2 == 0):
-    print(f'O número {num} é Par')
-else:
-    print(f'O número {num} é Impar')
+    <h2>Meus jogos favorito</h2>
+    <ol>
+        <li>PS2</li>
+        <ul type="square">
+            <li>Midnight club 3</li>
+            <li>Grand Theft Auto (GTA)</li>
+            <li>Tenken 5</li>
+        </ul>
+        <li>Windows</li>
+        <ul type="square">
+            <li>Grand Theft Auto (GTA)</li>
+            <li>Minecraft</li>
+            <li>Little Nightmares</li>
+        </ul>
+    </ol> <!-- Atalho: Alt + objeto para mudar-->
 
-print('Fim do programa')
-        </code>
-    </pre>
+    <h2>Lista de Definições</h2>
+    <dl> <!--DL = Lista de Definição-->
+        <dt>HTML</dt> <!-- Termo -->
+        <dd>linguagem de marcação para a criação do conteúdo de um site.</dd> <!-- Descrição -->
+        
+        <dt>CSS</dt>
+        <dd>Linguagem de marcação para a criação do design de um site.</dd>
 
-    <h2>Citações</h2> <!-- Tag "Q": recomendado usar em citações-->
-    <p>Como diria o pai de um amigo: <q>O computador é um burro muito rápido.</q></p>
-
-    <h2>Citações completas</h2>
-    <p>Segundo Jeff Noble, no seu livro HTML para Leigos:</p>
-
-    <blockquote cite="https://books.google.com.br/books?id=E8ZtDwAAQBAJ&pg=PA17&dq=HTML&hl=pt-BR&sa=X&ved=0ahUKEwjH5-PevNboAhVNIbkGHcoxC0gQ6AEIOjAC#v=onepage&q=HTML&f=false"> <!--"CITE": Diz ao google de ontem vem a citação -->
-        A diferença entre elementos inline e um bloco de texto é importante. 
-        Os elementos HTML neste capítulo descrevem os blocos de texto.
-    </blockquote> <!--"blockquote": Cria um bloco para fazer um citação-->
-
-    <h2>Abreviação</h2>
-    <p>
-        Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> <!--tag "Abbr": informações para abreviações-->
-        e <abbr title="Cascading Style Sheets">CSS</abbr>. Estou adorando!!
-    </p>
-    
-    <h2>Texto Invertido</h2>
-    <p>
-        Use a tag BDO criar um texto invertido assim: <bdo dir="rtl">estou muito feliz estudando html e css</bdo>
-    </p>
+        <dt>JavaScript</dt>
+        <dd>Linguagem de programação para a criação de interatividade de um site.</dd>
+    </dl>
 </body>
 </html>
