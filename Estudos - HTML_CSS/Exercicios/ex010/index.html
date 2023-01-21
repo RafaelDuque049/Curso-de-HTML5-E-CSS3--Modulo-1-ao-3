@@ -9,9 +9,9 @@
 <body>
     <h1>Usando Links externos</h1>
     <p>Você pode acessar o meu  <a href="https://github.com/RafaelDuque049" target="_blank">repositório público no GitHub</a></p> <!--(Targt="_blank"): Abre o Link em uma outra aba do navegador-->
-    <p>Você pode acesssar o meu <a href="https://www.youtube.com/@CursoemVideo" target="_blank" rel="external">Canal gratuito no Youtube</a></p> <!--(rel="external"): Indica que o documento ereferenciado não é parte do mesmo site do documento que o reverencia-->
+    <p>Você pode acesssar o <a href="https://www.youtube.com/@CursoemVideo" target="_blank" rel="external">Canal gratuito do Curso em Video no Youtube</a></p> <!--(rel="external"): Indica que o documento ereferenciado não é parte do mesmo site do documento que o reverencia-->
 
-    <h2>Usando Links internos</h2>
+    <h1>Usando Links internos</h1>
     <p>Está é o primeira página do site. Se você quiser, pode
          acessar também a minha <a href="pag002.html" rel="next">Segunda página</a> <!--(rel="next"): Indica que é a próxima página.-->
     </p>
@@ -19,5 +19,16 @@
     <p>Você também pode acessar a nosssa 
         <a href="Noticias/pag003.html" rel="next" target="_self">página de notícias</a><!--("_self"): Abrir na própria página-->
     </p>
+
+    <h1>Links para Download/Visualização</h1>
+    <ul type="circle">
+        <li >
+            <a href="Livro/Meu_livro.pdf" download="meu_livro.pdf" type="application/pdf" target="_blank" rel="prev"> <!--(Download="Nome_do_arquivo.pdf/txt/png"): Abre a janela para fazer o Download do arquivo-->
+                Baixar Material em PDF</a>
+        </li>
+        <li>
+            <a href="Livro/Meu_livro.pdf" target="_blank" rel="prev">Visualizar Material PDF</a>
+        </li>
+    </ul>
 </body> 
 </html>
