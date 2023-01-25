@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTMLs</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    
+    <picture> <!-- A menor imagem sempre tem que estar no topo-->
+        <source media="(max-width: 750px)" srcset="imagens/Pequeno.png" type="image/png"> <!-- A imagem Pequena-->
+        <source media="(max-width: 1050px)" srcset="imagens/Média.png" type="image/png"> <!-- A imagem Média-->
+        <img src="imagens/Grande.png" alt="Imagem grande fléxivel"> <!-- Maior imagem -->
+    </picture>
+
+    <h1>Reproduzindo áudio</h1>
+    <p>Aprendendo a reproduzir áudios em HTML</p>
+    <audio src="midia/happy-mistake.mp3" controls ></audio>
+    <!-- controls: Mostra os controles do áudio. -->
+    <!-- autoplay: Tocar automaticamente quando a página carregar. -->
+    <!-- loop: Reinicia a música sempre que terminar. -->
+    <!-- formas de áudio: MP3 WAV OGG-->
+
+    <audio preload="none" controls> <!-- 
+        preloud:Espera carregar(
+            Metadata: informaçoes básica, 
+            Auto: O áudio por completo, 
+            None: Não carrega informações do áudio até ser clicado
+            )-->
+        <source src="midia/Michael Jackson - Rock With You (Official Video) (320 kbps).mp3" type="audio/mpeg">
+        <source src="midia/Michael Jackson - Rock With You (Official Video) (320 kbps).ogg" type="audio/ogg">
+        <source src="midia/Michael Jackson - Rock With You (Official Video) (320 kbps).wav" type="audio/wav">
+        <p>Infelizmente seu navegador não consegue reproduzir o áudio. <a href="midia/Michael Jackson - Rock With You (Official Video) (320 kbps).mp3" download="Michael Jackson - Rock With You">Clique aqui para baixar o arquivo MP3</a></p>
+    </audio>
+</body>
+</html>
