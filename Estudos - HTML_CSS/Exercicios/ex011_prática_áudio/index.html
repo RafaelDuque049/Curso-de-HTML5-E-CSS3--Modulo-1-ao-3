@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens e audios</title>
+    <style>
+        .imagem_dispo{
+            height: 150px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Práticando Áudio e Imagem</h1>
+
+    <h2>Imagem dinâmica</h2>
+    <picture>
+        <source media="(max-width: 760px)" srcset="midias/Celular.jpg" type="image/jpg">
+        <source media="(max-width: 1050px)" srcset="midias/Tablet.png" type="image/png">
+        <img class="imagem_dispo" src="midias/Computador.png" alt="Imagem">
+    </picture>
+
+    <h2>Áudio</h2>
+    <audio preload="metadata" controls>
+        <source src="midias/happy-mistake.mp3" type="audio/mp3">
+        <source src="midias/happy-mistake.ogg" type="audio/ogg">
+        <p>
+            Não foi possível carregar o áudio, verifique se o navegador atual suporta arquivos de áudio(mp3 e/ou ogg) ou baixe o arquivo aqui <a href="midias/happy-mistake.mp3" download="Happy-Mistake.mp3"></a>.
+        </p>
+    </audio>
+</body>
+</html>
