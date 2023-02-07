@@ -1,0 +1,23 @@
+body{
+    background-color: #000000a2;
+    text-align: center;
+    color: white;
+}
+
+section{
+    margin: auto;
+    background-color: #0000009f;
+    width: min-content;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.407);
+}
+
+div{
+    margin: 20px;
+}
+
+a{
+    color: rgb(192, 181, 181);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
