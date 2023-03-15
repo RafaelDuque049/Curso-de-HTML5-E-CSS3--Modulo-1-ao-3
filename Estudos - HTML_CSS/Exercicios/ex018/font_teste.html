@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Fonts</title>
+    <style>
+        @charset "utf-8";
+
+        @import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+
+        @font-face{
+            font-family: 'RubikIso';
+            src: url('fonts/RubikIso-Regular.ttf') format('truetype');
+            font-weight: bolder;
+        }
+
+        #p1{
+            font-family: "RubikIso";
+        }
+
+        #p2{
+            font-family: "Tilt Neon";
+        }
+
+        body{
+            background-image: linear-gradient(to right, #000fff, #ff0000);
+            color: #fff;
+            font-size: 1.5em;
+            text-align: justify;
+        }
+
+        main{
+            max-width: 30em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando funcionamento do Font-Face</h1>
+    <main>
+        <p id="p1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore aperiam ad possimus maxime officiis dicta, odio saepe unde libero iusto quidem dolor sunt doloribus quasi repudiandae deleniti reprehenderit expedita. Accusantium.</p>
+        <p id="p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum doloremque illo natus incidunt accusamus voluptatibus modi temporibus reprehenderit velit sequi quos earum in odit, architecto ad asperiores quod at veritatis.</p>
+    </main>
+</body>
+</html>
