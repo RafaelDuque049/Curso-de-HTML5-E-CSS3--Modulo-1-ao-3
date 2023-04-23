@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* ELEMENTO BOX-LEVEL*/ 
+        h1{
+            background-color: lightgray;
+            width: 300px;
+            height: 300px;
+            border: outset black 0.5rem;
+            /*
+            Estilo de bordas:
+                none: sem borda;
+                hidden: equivalente a none;
+                dotted: borda pontilhada;
+                dashed: borda tracejada;
+                solid: borda contínua;
+                double: borda dupla;
+                groove: borda entalhada;
+                ridge: borda em ressalto;
+                inset: borda em baixo relevo;
+                outset: borda em alto relevo.
+            */
+        }
+
+        /* ELEMENTO INLINE-LEVEL*/
+        a{
+            border: dashed 0.5rem #00ff00;
+            display: block; /* Pode ser modificado para box-level com o "display: block;"*/
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="#">Links são exemplos de caixa inline-level</a>. Vamos ver como tudo isso funciona.</p>
+</body>
+</html>
