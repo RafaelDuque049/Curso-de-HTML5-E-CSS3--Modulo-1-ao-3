@@ -1,0 +1,205 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+
+@font-face {
+    font-family: 'idroid';
+    src: url('../image/fontes/idroid.otf') format('opentype');
+}
+
+body{
+    background-color: #84E1AD;
+    margin: 0px;
+}
+
+
+/* Cabeçario */
+header{
+    padding: 1px;
+    background-image: linear-gradient(to top, #0d2015 10%, #3CD983);
+    color: #fff;
+    box-shadow: 1px 3px 4px 2px #00000084;
+}
+
+header > h1{
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    text-shadow: 1px 1px 3px #000;
+}
+
+header > p{
+    display: block;
+    font-family: monospace;
+    font-size: 1.2em;
+    text-align: center;
+    margin: 20px auto;
+    padding: 5px;
+    max-width: 380px;
+}
+
+nav{
+    margin: 0px 10px;
+}
+
+.links_nav{
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 5px;
+    font-weight: 400;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    text-decoration: none;
+    transition: transform .4s, background-color .4s;
+}
+
+nav > a:hover{
+    background-color: rgb(100, 138, 100);
+    transform: scale(110%);
+}
+
+abbr{
+    text-decoration: none;
+}
+
+
+/* Conteúdo */
+main{
+    display: block;
+    background-color: #fff;
+    margin: auto;
+    max-width: 1000px;
+    border-radius: 10px;
+}
+
+main > h1, h2{
+    display: inline;
+    font-family: 'idroid';
+    color: #2a6946;
+}
+
+#titulo_sec{
+    display: inline-block;
+    margin: 15px;
+}
+
+.background_h2{
+    background-image: linear-gradient(to right, #07d7655d 50% , #fff);
+    margin: 15px;
+    padding: 5px;
+}
+
+main > p{
+    display: inline-block;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    margin: 15px;
+    text-align: justify;
+    text-indent: 25px;
+}
+
+picture{
+    display: block;
+    margin: 15px;
+}
+
+.image_flex{
+    width: 100%;
+}
+
+#Android_human{
+    display: block;
+    margin: auto;
+    max-width: 450px;
+}
+
+#background_video{
+    display: inline-block;
+    background-color: #0d2015;
+    width: 100%;
+}
+
+#video_youtube{
+    display: block;
+    margin: 15px auto;
+}
+
+section{
+    background-color: #C5EBD6;
+    margin: 15px;
+    border-radius: 10px;
+}
+
+section > article{
+    padding: 10px;
+}
+
+#titulo_artigo{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 1.2em;
+    background-color: #2FA866;
+    padding: 5px;
+    margin: 5px 0px 5px 0px;
+    border-radius: 10px;
+}
+
+#lista_up{
+    display: inline-flex;
+    width: 100%;
+}
+
+div > ul{
+    display: inline-block;
+    margin: 0px auto 0px 0px;
+}
+
+li{
+    display: block;
+    list-style-type: '\2714 \FE0F';
+}
+
+.marcacao{
+    background-color: transparent;
+    color: #0ea752;
+    font-weight: bold;
+}
+
+.links{
+    background-color: #0ea75381;
+    padding: 0px 5px;
+    text-decoration: none;
+    color: #0a7038;
+    font-weight: bold;
+}
+
+.links::after{
+    content: '\01F517';
+}
+
+.lista_item{
+    text-decoration: underline;
+    cursor: default;
+}
+
+
+/* rodapé */
+div > aside{
+    display: inline;
+    color: #fff;
+}
+
+footer > div{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-style: italic;
+    background-color: #0d2015;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+aside > a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
