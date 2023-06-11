@@ -124,14 +124,18 @@ picture{
 }
 
 #background_video{
-    display: inline-block;
     background-color: #0d2015;
+    position: relative;
+    padding-bottom: 57%;
     width: 100%;
 }
 
 #video_youtube{
-    display: block;
-    margin: 15px auto;
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    height: 90%;
+    width: 90%;
 }
 
 section{
@@ -157,7 +161,7 @@ section > article{
 
 ul{
     list-style-type: '\2714 \FE0F'; /* Estilizar a marcação de itens */
-    columns: 2; /* Definir para a lista se dividir em duas colunas */ 
+    columns: 2; /* Definir para a lista se dividir em duas colunas */
 }
 
 .marcacao{
