@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+    <style>
+        p{
+            width: 800px;
+            text-align: justify;
+        }
+
+        code{
+            text-decoration: underline;
+            font-weight: 900;
+        }
+    </style>
+</head>
+<body>
+    <h1>Os tipos de posições de elementos</h1>
+
+    <h2>static</h2>
+    <p>O valor <code>static</code>, é o valor padrão que todos os elementos recebem assim que adicionados ao arquivo. Ela segue o conceito de os elementos se posicionar seguindo as posições que é adicionada ao HTML, ou seja, em forma de pilha.</p>
+
+    <h2>relative</h2>
+    <p>O valor <code>relative</code>, segue o mesmo conceito do static, mas trabalha em conjunto com outros 4 declarações, sendo eles: top(a partir do topo), bottom(a partir de baixo), left(a partir da esquerda) e right(a partir da direita). Quando essas declarações recebem algum valor, a parte fisíca do elemento continuara em sua mesma posição como se não tivesse se movido, mas a parte visual se moverá para a posição solicitada.</p>
+
+    <h2>absolute</h2>
+    <p>O valor <code>absolute</code> se posiciona a partir do seu elemento pai que esteja recebendo um valor position diferente de static. Uma curiosidade que, mesmo o elemento se posicionando no corpo, o resto da página age como se ele não existisse, sendo possível posiciona-lo onde deseja.</p>
+
+    <h2>fixed</h2>
+    <p>Ele se posiciona a partir do viewport da página, ou seja, da tela 100% do navegador, não se limitando a nenhuma tag do body.</p>
+
+    <h2>sticky</h2>
+    <p>O elemento <code>sticky</code> é como se fosse um hidrído entre o relative e fixed. O elemento sticky tem a habilidade de 'grudar' no viewport, isso significa que, quando você passa por esse elemento, assim que ele chegar ao topo da tela, ele se mantem ali, e quando você voltar para cima, ele retorna para a sua posição definida.</p>
+</body>
+</html>
