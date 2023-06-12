@@ -6,33 +6,92 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>position</title>
     <style>
+        body{
+            background-color: rgb(175, 174, 174);
+            margin: 0px;
+        }
+
+        header{
+            background-color: #00ffff;
+            width: 100%;
+            box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.462);
+            position: sticky;
+            top: 0px;
+        }
+
+        h1{
+            margin: 0px;
+            text-align: center;
+            padding: 20px;
+            font-family: monospace;
+            font-size: 2.2rem;
+        }
+        
+        main{
+            background-color: #fff;
+            margin: auto;
+            max-width: 1000px;
+            border-radius: 10px;
+            padding: 20px;
+        }
+        
+        h2{
+            background-image: linear-gradient(to right, #00ffff, 20%, #fff);
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 0px 0px 5px 10px;
+            border-radius: 7px;
+            margin-bottom: .5rem;
+        }
+        
+        h2::before{
+            content: '\27A1';
+        }
+        
         p{
-            width: 800px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             text-align: justify;
+            width: 95%;
+            font-size: 1.2rem;
+            line-height: 2rem;
         }
 
         code{
-            text-decoration: underline;
+            background-color: #aaaaaa;
+            color: #131313;
             font-weight: 900;
+            font-size: 1rem;
+            padding: 2px 5px;
+            border-radius: 5px;
+            cursor: pointer;
         }
-    </style>
+
+        abbr{
+            text-decoration: none;
+        }
+        </style>
 </head>
 <body>
-    <h1>Os tipos de posições de elementos</h1>
-
-    <h2>static</h2>
-    <p>O valor <code>static</code>, é o valor padrão que todos os elementos recebem assim que adicionados ao arquivo. Ela segue o conceito de os elementos se posicionar seguindo as posições que é adicionada ao HTML, ou seja, em forma de pilha.</p>
-
-    <h2>relative</h2>
-    <p>O valor <code>relative</code>, segue o mesmo conceito do static, mas trabalha em conjunto com outros 4 declarações, sendo eles: top(a partir do topo), bottom(a partir de baixo), left(a partir da esquerda) e right(a partir da direita). Quando essas declarações recebem algum valor, a parte fisíca do elemento continuara em sua mesma posição como se não tivesse se movido, mas a parte visual se moverá para a posição solicitada.</p>
-
-    <h2>absolute</h2>
-    <p>O valor <code>absolute</code> se posiciona a partir do seu elemento pai que esteja recebendo um valor position diferente de static. Uma curiosidade que, mesmo o elemento se posicionando no corpo, o resto da página age como se ele não existisse, sendo possível posiciona-lo onde deseja.</p>
-
-    <h2>fixed</h2>
-    <p>Ele se posiciona a partir do viewport da página, ou seja, da tela 100% do navegador, não se limitando a nenhuma tag do body.</p>
-
-    <h2>sticky</h2>
-    <p>O elemento <code>sticky</code> é como se fosse um hidrído entre o relative e fixed. O elemento sticky tem a habilidade de 'grudar' no viewport, isso significa que, quando você passa por esse elemento, assim que ele chegar ao topo da tela, ele se mantem ali, e quando você voltar para cima, ele retorna para a sua posição definida.</p>
+    <header>
+        <h1>Todos os valores para position</h1>
+    </header>
+    <main>
+        <h2>static</h2>
+        <p>O valor <code><abbr title="estático">static</abbr></code>, é o valor padrão que todos os elementos recebem assim que adicionados ao arquivo. Ela segue o conceito de os elementos se posicionar seguindo as posições que é adicionada ao HTML, ou seja, em forma de pilha.</p>
+    
+        <h2>relative</h2>
+        <p>O valor <code><abbr title="relativo">relative</abbr></code>, segue o mesmo conceito do static, mas trabalha em conjunto com outros 4 declarações, sendo eles: top(a partir do topo), bottom(a partir de baixo), left(a partir da esquerda) e right(a partir da direita). Quando essas declarações recebem algum valor, a parte fisíca do elemento continuara em sua mesma posição como se não tivesse se movido, mas a parte visual se moverá para a posição solicitada.</p>
+        
+        <h2>absolute</h2>
+        <p>O valor <code><abbr title="absoluto">absolute</abbr></code> se posiciona a partir do seu elemento pai que esteja recebendo um valor position diferente de static. Uma curiosidade que, mesmo o elemento se posicionando no corpo, o resto da página age como se ele não existisse, sendo possível posiciona-lo onde deseja.</p>
+    
+        <h2>fixed</h2>
+        <p>O valor <code><abbr title="fixado">fixed</abbr></code> faz com que o elemento se posicione a partir do viewport da página, ou seja, da tela 100% do navegador, não se limitando a nenhuma tag do corpo.</p>
+    
+        <h2>sticky</h2>
+        <p>Quando o elemento recebe <code><abbr title="grudento">sticky</abbr></code>, ele torna um hidrído entre o relative e fixed. O elemento sticky tem a habilidade de 'grudar' no viewport, isso significa que, quando você passa por esse elemento, assim que ele chegar em um canto da tela, ele se mantem ali, e quando você voltar para cima, ele retorna a sua posição definida.</p>
+    
+        <h2>z-index</h2>
+        <p>Em meios a tantas posições, em algum momento uma pode sobrepor sobre a outra e acabar não ficando como deseja. Para isso, existe a declaração <code><abbr title="índice z">z-index</abbr></code>, passando valores da camada, você pode remanejar um elemento acima ou abaixo de outro elemento.</p>
+    </main>
 </body>
 </html>
