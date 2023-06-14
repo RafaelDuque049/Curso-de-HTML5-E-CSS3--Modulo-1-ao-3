@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de imagens</title>
+    <style>
+        body{
+            background-image: url('imagens/wallpaper001.jpg');
+        }
+
+        div.quadrado{
+            display: inline-block;
+            background-color: rgba(128, 128, 128, 0.483);
+            width: 150px;
+            height: 150px;
+            border: solid 1px black;
+            border-radius: 5px
+        }
+
+        div#q1{
+            background-color: lightblue;
+        }
+
+        div#q2{
+            background-image: linear-gradient(to bottom, orange, red);
+        }
+
+        div#q3{
+            background: url('imagens/pattern003.png');
+        }
+    </style>
+</head>
+<body>
+    <div class="quadrado" id="q1"></div>
+    <div class="quadrado" id="q2"></div>
+    <div class="quadrado" id="q3"></div>
+</body>
+</html>
