@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tamanho da imagem de fundo</title>
+    <style>
+        body{
+            height: 100vh;
+            background-color: rgba(173, 250, 224, 0.931);
+            background-image: url('imagens/wallpaper002.jpg');
+            background-repeat: no-repeat;
+            background-position: center center;
+
+            background-size: cover; /* Ele pode receber valores de medidas(px, rem, porcentagem) e mais as 3 opções disponíveis para uso demonstradas abaixo: */
+            /*
+            auto: A imagem fica em seu tamanho original e não se adapta. (Valor padrão)
+            contain: Ela se adapta aos tamanhos, mas surgem barras em volta da imagem quando não bem enquadrada.
+            cover: Ele cobre toda a area disponível para a imagem mesmo sendo necessário recortar os cantos da mesma.
+            */ 
+        }
+
+        main{
+            background-color: #fff;
+            width: 500px;
+            padding: 20px;
+            border-radius: 10px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Teste de imagem de fundo</h1>
+        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum expedita excepturi dicta quibusdam optio officia molestias voluptatum tenetur temporibus reiciendis nulla, aspernatur cupiditate, ab, pariatur libero perferendis sint amet ea?</P>
+        <P>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint, inventore voluptates illum, sed a, eligendi nam reprehenderit enim ratione obcaecati labore nemo aspernatur? Reiciendis voluptates voluptas cum quibusdam ipsam esse.</P>
+    </main>
+</body>
+</html>
