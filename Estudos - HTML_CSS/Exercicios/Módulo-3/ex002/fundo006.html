@@ -7,17 +7,33 @@
     <style>
         body{
             height: 100vh;
+            /*
             background-color: rgba(173, 250, 224, 0.931);
             background-image: url('imagens/wallpaper002.jpg');
             background-repeat: no-repeat;
             background-position: center center;
-
+            */
+            
             background-size: cover; /* Ele pode receber valores de medidas(px, rem, porcentagem) e mais as 3 opções disponíveis para uso demonstradas abaixo: */
             /*
             auto: A imagem fica em seu tamanho original e não se adapta. (Valor padrão)
             contain: Ela se adapta aos tamanhos, mas surgem barras em volta da imagem quando não bem enquadrada.
             cover: Ele cobre toda a area disponível para a imagem mesmo sendo necessário recortar os cantos da mesma.
             */ 
+
+
+            background-attachment: scroll; /* O background-attachment serve para definir a relação do fundo com o resto da página, se é fixa ou móvel. */
+            /* A declaração background-attachment pode receber 3 valores, sendo eles: 
+                1. fixed: O fundo se torna fixo. Ou seja, independente se o usuário movimentar, ele se mantem fixado. 
+                2. scroll: É o valor padrão dos navegadores, onde o conteúdo se move assim que o usúario movimentar a página.
+                3. local: Torna o background fixo em relação ao elemento, agindo como se fossem apenas um só elemento.
+            */
+
+            /* Shorthand - background
+                color > imagem > position/size > repeat > attachment
+            */
+
+            background: rgba(173, 250, 224, 0.931) url("imagens/wallpaper002.jpg") center center/cover no-repeat scroll;
         }
 
         main{
@@ -25,7 +41,7 @@
             width: 500px;
             padding: 20px;
             border-radius: 10px;
-            margin: auto;
+            margin: 50px auto;
         }
     </style>
 </head>
