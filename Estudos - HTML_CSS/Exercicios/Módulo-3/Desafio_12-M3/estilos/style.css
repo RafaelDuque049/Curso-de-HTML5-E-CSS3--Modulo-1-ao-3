@@ -1,0 +1,99 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Passion One';
+    src: url("Passion_One/PassionOne-Bold.ttf") format("TrueType");
+}
+
+@font-face {
+    font-family: 'Sriracha';
+    src: url("Sriracha/Sriracha-Regular.ttf") format("TrueType");
+}
+
+:root{
+    --font1: 'Passion One';
+    --font2: 'Sriracha';
+}
+
+body{
+    margin: 0px;
+}
+
+header{
+    background-color: black;
+    text-align: center;
+    padding: 30px;
+}
+
+h1{
+    font-family: var(--font1);
+    font-variant: small-caps;
+    color: #fff;
+    font-size: 10vw;
+    margin: 0px;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+#nome-autor{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+    color: #fff;
+}
+
+/* Conteúdo principal */
+.secao-texto{
+    padding: 30px;
+}
+
+.secao-imagem{
+    background-color: #d3d3d3;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    box-shadow: inset 5px 5px 15px rgba(0, 0, 0, 0.457);
+}
+
+#img01{
+    background-image: url("../imagens/background001.jpg");
+    background-position: right center;
+    background-size: cover;
+}
+
+#img02{
+    background-image: url("../imagens/background002.jpg");
+    background-size: cover;
+}
+
+.box-poema{
+    display: inline-block;
+    font-family: var(--font2);
+    font-size: 4vw;
+    padding: 10px;
+}
+
+.box-poema-imagem{
+    background-color: #0000009a;
+    color: #fff;
+}
+
+/* Rodapé */
+footer{
+    background-color: #000;
+    text-align: center;
+    padding: 10px;
+}
+
+footer>p{
+    display: inline;
+    font-family: monospace;
+    color: #fff;
+    font-size: 1.1rem;
+}
