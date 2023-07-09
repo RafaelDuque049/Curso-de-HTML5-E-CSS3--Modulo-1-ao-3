@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        table{
+            border-collapse: collapse; /* Define a caracteristica da borda dos dados */
+            /* Valores: 
+                 separate = Define que a borda dos dados são separados. (Valor padrão)
+                    collapse = Define que as bordas dos dados, serão coladas uma nas outras.
+            */
+        }
+
+        td{
+            border: 1px solid #000; /* Define uma borda para cada dado da tabela*/
+
+            font-size: 1rem;
+            font-family: monospace;
+            text-align: center;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Minha primeira tabela</h1>
+    <!-- 
+        Hierarquia de tabela (Simples):
+        Table = tabela: 
+
+            Table Row(tr) = linha de tabela:
+
+                Table Header(th) = cabeçalho da tabela
+
+                Table Data(td) = dado da tabela
+     -->
+    <table> <!-- Tabela -->
+        <tr> <!-- Linha -->
+            <td>A1</td> <!-- Dados -->
+            <td>B1</td>
+            <td>C1</td>
+        </tr>
+        <tr>
+            <td>A2</td>
+            <td>B2</td>
+            <td>C2</td>
+        </tr>
+        <tr> <!-- Não é obrigatório fechar tags TD e TR, se tornando o fechamento opcional. -->
+            <td>A3 
+            <td>B3
+            <td>C3
+        <tr>
+            <td>A4
+            <td>B4
+            <td>C4
+    </table>
+</body>
+</html>
