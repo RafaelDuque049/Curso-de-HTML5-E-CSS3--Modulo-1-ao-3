@@ -6,6 +6,7 @@
     <title>Tabelas</title>
     <style>
         table{
+            /* colapso da fronteira */
             border-collapse: collapse; /* Define a caracteristica da borda dos dados */
             /* Valores: 
                  separate = Define que a borda dos dados são separados. (Valor padrão)
@@ -20,6 +21,15 @@
             font-family: monospace;
             text-align: center;
             width: 100px;
+            height: 100px;
+
+            /* Alinhamento vertical */
+            vertical-align: bottom; /* Define a posição vertical dos elementos dentro das células. */
+            /* Principais valores: 
+                top: elementos fixados no topo da célula.
+                bottom: elemntos fixados no inferior da célula.
+                middle: alinha os elementos ao centro na vertical.
+            */
         }
     </style>
 </head>
@@ -46,7 +56,7 @@
             <td>B2</td>
             <td>C2</td>
         </tr>
-        <tr> <!-- Não é obrigatório fechar tags TD e TR, se tornando o fechamento opcional. -->
+        <tr> <!-- Não é obrigatório fechar tags TD e TR. Assim, tornando o fechamento de tag opcional. -->
             <td>A3 
             <td>B3
             <td>C3
