@@ -7,10 +7,13 @@
     <style>
         body{
             font-family: Arial, Helvetica, sans-serif;
+            height: 200vh;
         }
 
         table{
+            box-shadow: 3px 3px 5px #00000092;
             border-collapse: collapse;
+            text-transform: capitalize; /* transformação de texto: capitalize = todas as primeiras letras de uma palavra estarão em maiusculo. */
             margin: auto;
         } 
         
@@ -19,39 +22,53 @@
             width: 300px;
             max-width: 300px; 
             */
-
-            width: max(300px, 300px); 
+            
+            width: max(300px, 300px); /* max(tamanho original, tamanho máximo) */
             padding: 5px;
             text-align: center;
             border: 1px solid #000;
         }
-
+        
         thead>tr, tfoot{
             color: #fff;
             background-color: #808080;
+            text-decoration: underline;
         }
+        
+        caption{
+            position: sticky;
+            top: 1px;
+            box-shadow: 3px 3px 5px #00000092;
+            background-color: #bab8b8;
+            font-size: 1.4rem;
+            border: solid 1px #000;
+            padding: 10px;
+        }
+        
     </style>
 </head>
 <body>
-    <!-- Anatomia para tabelas grandes:
-            Thead{
+    <!-- 
+        Anatomia para tabelas grandes:
+            Caption(título/legenda da tabela)
+
+            Thead(cabeçario da tabela){
                 Tr(table row), td(table data), th(table header)
             }
         
-            Tbody{
+            Tbody(corpo da tabela){
                 Tr(table row), td(table data), th(table header)
             }
                 
-            Tfoot{
+            Tfoot(rodapé da tabela){
                 Tr(table row), td(table data), th(table header)
             }
-
-
      -->
     <table>
+        <caption>Tabela de população por estado.</caption> <!-- Adicione ao topo da tabela para uma melhor semântica. -->
         <thead>
             <tr>
-                <th>Estado</th>
+                <th scope="col">Estado</th> <!-- scope(escopo): definir se os dados estão na horizontal(linha/row) ou na vertical(coluna/col).-->
                 <th>População</th>
             </tr>
         </thead>
@@ -71,7 +88,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de habitantes</th>
+                <th scope="row">Total de habitantes</th>
                 <td><strong>83.624.783</strong></td>
             </tr>
         </tfoot>
