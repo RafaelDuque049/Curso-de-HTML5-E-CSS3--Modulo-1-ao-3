@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praticando tabela</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+
+        th{
+            background-color: rgb(107, 107, 107);
+            color: #fff;
+        }
+
+        th, td{
+            text-align: center;
+            vertical-align: baseline;
+            padding: 10px;
+            width: 100px;
+            border: 1px solid #000;
+        }
+
+        tbody tr:nth-child(odd){
+            background-color: lightgrey;
+        }
+
+        table{
+            border-collapse: collapse;
+        }
+
+        caption{
+            background-color: #2452a7;
+            color: #fff;
+            font-size: 2rem;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Praticando hierarquia de tableas</h1>
+    <table>
+        <caption> Tabela de Teste </caption>
+        <thead>
+            <tr>
+                <th scope="col">1</th>
+                <th scope="col">2</th>
+                <th scope="col">3</th>
+                <th scope="col">4</th>
+                <th scope="col">5</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>01</td>
+                <td>02</td>
+                <td>03</td>
+                <td>04</td>
+                <td>05</td>
+            </tr>
+            <tr>
+                <td>01</td>
+                <td>02</td>
+                <td>03</td>
+                <td>04</td>
+                <td>05</td>
+            </tr>
+            <tr>
+                <td>01</td>
+                <td>02</td>
+                <td>03</td>
+                <td>04</td>
+                <td>05</td>
+            </tr>
+            <tr>
+                <td>01</td>
+                <td>02</td>
+                <td>03</td>
+                <td>04</td>
+                <td>05</td>
+            </tr>
+            <tr>
+                <td>01</td>
+                <td>02</td>
+                <td>03</td>
+                <td>04</td>
+                <td>05</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
