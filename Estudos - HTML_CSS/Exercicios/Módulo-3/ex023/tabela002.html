@@ -45,6 +45,10 @@
             padding: 10px;
         }
         
+        /* :nth-child() aplica declaração de estilo para os filhos de um elemento. */
+        tbody > tr:nth-child(2n){ /* Definir que elementos pares ou ímpares receba a declaração: odd(impar), even(par). */
+            background-color: lightgray;
+        }
     </style>
 </head>
 <body>
@@ -85,11 +89,27 @@
                 <td>Rio de Janeiro</td>
                 <td>17 264 943</td>
             </tr>
+            <tr>
+                <td>Bahia</td>
+                <td>14 136 417</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td>11 443 208</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td>19 880 506</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td>9 058 155</td>
+            </tr>
         </tbody>
         <tfoot>
             <tr>
                 <th scope="row">Total de habitantes</th>
-                <td><strong>83.624.783</strong></td>
+                <td><strong>138.871.069</strong></td>
             </tr>
         </tfoot>
     </table>
