@@ -11,6 +11,7 @@
         }
 
         table{
+            position: relative;
             box-shadow: 3px 3px 5px #00000092;
             border-collapse: collapse;
             text-transform: capitalize; /* transformação de texto: capitalize = todas as primeiras letras de uma palavra estarão em maiusculo. */
@@ -24,7 +25,7 @@
             */
             
             width: max(300px, 300px); /* max(tamanho original, tamanho máximo) */
-            padding: 5px;
+            padding: 10px;
             text-align: center;
             border: 1px solid #000;
         }
@@ -34,9 +35,13 @@
             background-color: #808080;
             text-decoration: underline;
         }
+
+        thead > tr{
+            position: sticky;
+            top: 0px;
+        }
         
         caption{
-            position: sticky;
             top: 1px;
             box-shadow: 3px 3px 5px #00000092;
             background-color: #bab8b8;
@@ -46,7 +51,7 @@
         }
         
         /* :nth-child() aplica declarações de estilos à um elemento, pulando em intervalos definidos em seu parâmetro. */
-        tbody > tr:nth-child(2n){ /* Definir que elementos pares ou ímpares receba a declaração: odd(impar), even(par). */
+        tbody tr:nth-child(2n){ /* Definir que elementos pares ou ímpares receba a declaração: odd(impar), even(par). */
             background-color: lightgray;
         }
     </style>
@@ -73,7 +78,7 @@
         <thead>
             <tr>
                 <th scope="col">Estado</th> <!-- scope(escopo): definir se os dados estão na horizontal(linha/row) ou na vertical(coluna/col).-->
-                <th>População</th>
+                <th scope="col">População</th>
             </tr>
         </thead>
         <tbody>
@@ -113,5 +118,8 @@
             </tr>
         </tfoot>
     </table>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione amet voluptatibus numquam veritatis ut vel itaque, ipsum voluptates eum alias laboriosam animi, perspiciatis, accusamus architecto at sint aliquam similique voluptate! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos adipisci officia earum fugit cum ipsam vitae rerum iure. Fugiat ipsam quibusdam eos minus quis, doloremque modi veritatis vitae quas magni?</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia ex adipisci cupiditate earum deserunt labore nostrum, ratione odio natus vitae eius quaerat amet totam temporibus unde omnis, voluptatum quis delectus?</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic rem officia vel mollitia eveniet reprehenderit commodi, eligendi magnam obcaecati pariatur in nemo dolorem ab voluptatibus nam necessitatibus dolores alias iusto?</p>
 </body>
 </html>
